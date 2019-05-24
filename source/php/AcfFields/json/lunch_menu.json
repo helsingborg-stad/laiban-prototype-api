@@ -54,7 +54,7 @@
                     "collapsed": "field_5ce7ccec24ccc",
                     "min": 1,
                     "max": 0,
-                    "layout": "table",
+                    "layout": "row",
                     "button_label": "Add dish",
                     "sub_fields": [
                         {

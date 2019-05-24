@@ -57,7 +57,7 @@
                     'collapsed' => 'field_5ce7ccec24ccc',
                     'min' => 1,
                     'max' => 0,
-                    'layout' => 'table',
+                    'layout' => 'row',
                     'button_label' => __('Add dish', 'laiban-api'),
                     'sub_fields' => array(
                         0 => array(
