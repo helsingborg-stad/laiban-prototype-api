@@ -1,0 +1,129 @@
+<?php 
+
+if (function_exists('acf_add_local_field_group')) {
+    acf_add_local_field_group(array(
+    'key' => 'group_5ce7c8020683c',
+    'title' => __('Lunch Menu', 'laiban-api'),
+    'fields' => array(
+        0 => array(
+            'key' => 'field_5ce7c80824cc9',
+            'label' => __('Lunch Menu', 'laiban-api'),
+            'name' => 'lunch_menu',
+            'type' => 'repeater',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'collapsed' => 'field_5ce7c81c24cca',
+            'min' => 0,
+            'max' => 0,
+            'layout' => 'row',
+            'button_label' => __('Add day', 'laiban-api'),
+            'sub_fields' => array(
+                0 => array(
+                    'key' => 'field_5ce7c81c24cca',
+                    'label' => __('Date', 'laiban-api'),
+                    'name' => 'date',
+                    'type' => 'date_picker',
+                    'instructions' => '',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'display_format' => 'd/m/Y',
+                    'return_format' => 'm d Y',
+                    'first_day' => 1,
+                ),
+                1 => array(
+                    'key' => 'field_5ce7cce024ccb',
+                    'label' => __('Dishes', 'laiban-api'),
+                    'name' => 'dishes',
+                    'type' => 'repeater',
+                    'instructions' => '',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'collapsed' => 'field_5ce7ccec24ccc',
+                    'min' => 1,
+                    'max' => 0,
+                    'layout' => 'table',
+                    'button_label' => __('Add dish', 'laiban-api'),
+                    'sub_fields' => array(
+                        0 => array(
+                            'key' => 'field_5ce7ccec24ccc',
+                            'label' => __('Content', 'laiban-api'),
+                            'name' => 'content',
+                            'type' => 'textarea',
+                            'instructions' => '',
+                            'required' => 1,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '80',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'maxlength' => '',
+                            'rows' => 2,
+                            'new_lines' => '',
+                        ),
+                        1 => array(
+                            'key' => 'field_5ce7cd0f24ccd',
+                            'label' => __('Image', 'laiban-api'),
+                            'name' => 'image',
+                            'type' => 'image',
+                            'instructions' => '',
+                            'required' => 0,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'return_format' => 'url',
+                            'preview_size' => 'thumbnail',
+                            'library' => 'all',
+                            'min_width' => '',
+                            'min_height' => '',
+                            'min_size' => '',
+                            'max_width' => '',
+                            'max_height' => '',
+                            'max_size' => '',
+                            'mime_types' => '',
+                        ),
+                    ),
+                ),
+            ),
+        ),
+    ),
+    'location' => array(
+        0 => array(
+            0 => array(
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'laiban-api-lunch-menu',
+            ),
+        ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => 1,
+    'description' => '',
+));
+}

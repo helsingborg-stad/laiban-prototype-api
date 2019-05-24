@@ -1,0 +1,132 @@
+<?php 
+
+
+if (function_exists('acf_add_local_field_group')) {
+
+    acf_add_local_field_group(array(
+    'key' => 'group_5ce4ef761078e',
+    'title' => __('Preschool - Activities', 'laiban-api'),
+    'fields' => array(
+        0 => array(
+            'key' => 'field_5ce4f22af4e1d',
+            'label' => __('Activities', 'laiban-api'),
+            'name' => 'activities',
+            'type' => 'repeater',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'collapsed' => 'field_5ce4f247f4e1e',
+            'min' => 0,
+            'max' => 0,
+            'layout' => 'row',
+            'button_label' => __('Add activity', 'laiban-api'),
+            'sub_fields' => array(
+                0 => array(
+                    'key' => 'field_5ce4f247f4e1e',
+                    'label' => __('Date', 'laiban-api'),
+                    'name' => 'date',
+                    'type' => 'date_picker',
+                    'instructions' => '',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'display_format' => 'd/m/Y',
+                    'return_format' => 'm/d/Y',
+                    'first_day' => 1,
+                ),
+                1 => array(
+                    'key' => 'field_5ce4f28bf4e1f',
+                    'label' => __('Content', 'laiban-api'),
+                    'name' => 'content',
+                    'type' => 'repeater',
+                    'instructions' => '',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'collapsed' => 'field_5ce4f2b6f4e20',
+                    'min' => 1,
+                    'max' => 3,
+                    'layout' => 'block',
+                    'button_label' => __('Add content', 'laiban-api'),
+                    'sub_fields' => array(
+                        0 => array(
+                            'key' => 'field_5ce4f2b6f4e20',
+                            'label' => __('Text', 'laiban-api'),
+                            'name' => 'text',
+                            'type' => 'textarea',
+                            'instructions' => '',
+                            'required' => 0,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'maxlength' => 82,
+                            'rows' => 2,
+                            'new_lines' => '',
+                        ),
+                    ),
+                ),
+                2 => array(
+                    'key' => 'field_5ce4f2c8f4e21',
+                    'label' => __('Image', 'laiban-api'),
+                    'name' => 'image',
+                    'type' => 'image',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'return_format' => 'url',
+                    'preview_size' => 'medium',
+                    'library' => 'all',
+                    'min_width' => '',
+                    'min_height' => '',
+                    'min_size' => '',
+                    'max_width' => '',
+                    'max_height' => '',
+                    'max_size' => '',
+                    'mime_types' => '',
+                ),
+            ),
+        ),
+    ),
+    'location' => array(
+        0 => array(
+            0 => array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'preschool',
+            ),
+        ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => 1,
+    'description' => '',
+));
+
+}
