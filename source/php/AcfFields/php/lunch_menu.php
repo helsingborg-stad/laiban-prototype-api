@@ -38,7 +38,7 @@
                         'id' => '',
                     ),
                     'display_format' => 'd/m/Y',
-                    'return_format' => 'm d Y',
+                    'return_format' => 'm/d/Y',
                     'first_day' => 1,
                 ),
                 1 => array(
