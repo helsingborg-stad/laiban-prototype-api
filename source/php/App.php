@@ -64,7 +64,7 @@ class App
 
     public function removeResponseKeys($response, $post, $request)
     {
-        $allowedKeys = array('data', 'id');
+        $allowedKeys = array('data', 'id', 'title');
         $response->data = array_filter($response->data, function ($key) use ($allowedKeys) {
             return in_array($key, $allowedKeys);
         }, ARRAY_FILTER_USE_KEY);
