@@ -41,7 +41,8 @@ $acfExportManager->autoExport(array(
     'location' => 'group_5ce4f4ffad4f0',
     'calendar' => 'group_5ce508bf360b2',
     'activities' => 'group_5ce4ef761078e',
-    'lunch_menu' => 'group_5ce7c8020683c'
+    'lunch_menu' => 'group_5ce7c8020683c',
+    'clock_events' => 'group_5ceacf9ce6ae4'
 ));
 $acfExportManager->import();
 
